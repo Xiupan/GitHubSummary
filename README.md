@@ -1,24 +1,18 @@
-# README
+#GitHub Summary Daily Project
+###The Iron Yard Houston
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+GitHub provides data on users and their open-source projects via its API. You can get info about a single user or about a user's repositories.
 
-Things you may want to cover:
+For this project, you will make a Rails application that shows a summary of GitHub activity for a user. There should be a homepage where you can enter a GitHub username, and then a route that shows the summary, like /summaries/:username. When someone enters a username on the front page, they should be redirected to the appropriate summary page.
 
-* Ruby version
+That summary page should look something like the following:
 
-* System dependencies
+github-resume.png
+To build this page, you will need to make a few API requests. There are many libraries to do this with Ruby. We recommend HTTParty for its ease of use with JSON.
 
-* Configuration
+When someone requests a summary page, check to see if you have already made the API requests to build it. If so, show it. If not, use ActiveJob to make the requests and show the user a page that says that building the page is in progress. When the job is over, show the user the completed page.
 
-* Database creation
+Tips  
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The majority of what you need to make this work is under "Creating a Job" in your Background Processes lesson.
+When you get data back from the API, store the parts you need in a database. You will likely have a User model, Language model, and Repo model.
