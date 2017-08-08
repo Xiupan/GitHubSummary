@@ -12,7 +12,7 @@ To build this page, you will need to make a few API requests. There are many lib
 
 When someone requests a summary page, check to see if you have already made the API requests to build it. If so, show it. If not, use ActiveJob to make the requests and show the user a page that says that building the page is in progress. When the job is over, show the user the completed page.
 
-Tips  
+### Tips  
 
 The majority of what you need to make this work is under "Creating a Job" in your Background Processes lesson.
 When you get data back from the API, store the parts you need in a database. You will likely have a User model, Language model, and Repo model.
