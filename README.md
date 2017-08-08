@@ -1,5 +1,5 @@
-#GitHub Summary Daily Project
-###The Iron Yard Houston
+# GitHub Summary Daily Project
+### The Iron Yard Houston
 
 GitHub provides data on users and their open-source projects via its API. You can get info about a single user or about a user's repositories.
 
